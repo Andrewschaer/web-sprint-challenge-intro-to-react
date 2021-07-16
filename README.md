@@ -36,9 +36,9 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 Your finished project must include all of the following requirements:
 
-- [ ] Use the endpoint `[GET] https://swapi.dev/api/people` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
-- [ ] Set the list of characters into state.
-- [ ] Render your characters to the DOM:
+- [X] Use the endpoint `[GET] https://swapi.dev/api/people` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
+- [X] Set the list of characters into state.
+- [X] Render your characters to the DOM:
 
   1. Build a React component named 'Character' to render an individual character.
   1. Map over the list in state, and for each character render a Character to the page.
@@ -69,10 +69,10 @@ After finishing your required elements, you can push your work further. These go
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes.
-- [ ] Create a pull request to merge `<firstName-lastName>` branch into `main`.
-- [ ] Please don't merge your own pull request and make sure **you are on your own repo**.
-- [ ] Check Codegrade for automated feedback.
+- [X] Submit via Codegrade by committing and pushing any new changes.
+- [X] Create a pull request to merge `<firstName-lastName>` branch into `main`.
+- [X] Please don't merge your own pull request and make sure **you are on your own repo**.
+- [X] Check Codegrade for automated feedback.
 - [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
 - [ ] Any changes pushed after the deadline will not receive any feedback.
 
@@ -81,6 +81,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+  #React JS is a JavaScript library that allows building more-easily scalable applications via components that hold state, ultimately allowing source data to be changed or updated easily and on the fly without any headaches.  For example in class we built a web page that revolved around data of friends and each friends pet.  By building this using react, passing data to different aspects of the webpage was much more straightforward, as that each component held it's own state.
+
 1. Describe component state.
+
+  #Component state is a way for a component of your application to monitor a state object and rerender the application if the state object changes.  This allows your application to know when it needs to rerender and update itself for the user automatically.
+
 1. Describe props.
+
+  #Props are used in ReactJS to pass data down to or set defined data for a component.  This makes it easy in ReactJS to link your components data and states within your code base.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+  #Side effects in React allow you to run additional code after the virtual DOM from React updates the DOM of your webpage.  In order to sync effects in a React component to changes of certain state or props, you can include functions that check for different values of state before running a specified code for the side effect.
