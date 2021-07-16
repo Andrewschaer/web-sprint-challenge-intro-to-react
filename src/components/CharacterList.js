@@ -1,12 +1,23 @@
 import React from 'react'
 import Character from './Character.js'
+import styled from 'styled-components'
+
+const StyledCharacterList = styled.div`
+    border: 10px groove gold;
+    max-width: 80%;
+    margin: auto;
+    h3 {
+        color: goldenrod;
+        font: bold 2rem 'Trebuchet MS';
+    }
+`
 
 export default function CharacterList(props) {
     const { characters } = props
     return (
-        <div className = 'list-characters container'>
-            <h3>Hi There from Characterlist</h3>
+        <StyledCharacterList className = 'list-characters container'>
+            <h3>Learn More About Each Star Wars Character:</h3>
             {characters.map(character => <Character key={character.url} characterData={character} />)}
-        </div>
+        </StyledCharacterList>
     )
 }

@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import './App.css';
 import CharacterList from './components/CharacterList'
+import styled from 'styled-components';
+
+
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -20,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">A Long Time Ago,<br/>In A Galaxy Far, Far Away...</h1>
       <CharacterList characters={characters}/>
     </div>
   );
