@@ -14,10 +14,11 @@ const StyledCharacterList = styled.div`
 
 export default function CharacterList(props) {
     const { characters } = props
+    const reptiles = ['1 ','2 ','3 ','4 ']
     return (
         <StyledCharacterList className = 'list-characters container'>
             <h3>Learn More About Each Star Wars Character:</h3>
-            {characters.map(character => <Character key={character.url} characterData={character} />)}
+            {characters.map(character => <Character key={character.url} characterData={character} />)} 
         </StyledCharacterList>
     )
 }
